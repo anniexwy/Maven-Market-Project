@@ -11,22 +11,22 @@ The management team needs a way to track KPIs (sales, revenue, profit, returns),
 ### Steps I went through
 #### 1. Connect and transform the raw data using Power Query
 This include: 
-* Ensuring all the data types are correct
-* Creating customers' full name by merging the "first name" & "last name" columns in **_Customers_** table
-* Replacing null values with zeros in "recyclable" & "low-fat" columns in **_Products_** table
-* Generating start of month, start of quarter and year through a list of date in **_Calendar_** table
+* Ensured all the data types are correct
+* Created customers' full name by merging the "first name" & "last name" columns in **_Customers_** table
+* Replaced null values with zeros in "recyclable" & "low-fat" columns in **_Products_** table
+* Generated start of month, start of quarter and year through a list of date in **_Calendar_** table
 
 #### 2. Build a relational data model
 This include:
-* Identifying primary keys and foreign keys in each table
-* Connecting the tables via the keys to construct star & snowflake schema
-* Ensuring the filters are one-way filters
-* Hiding all the foreign keys in the table to prevent invalid filter context
+* Identified primary keys and foreign keys in each table
+* Connected the tables via the keys to construct star & snowflake schema
+* Ensured the filters are one-way filters
+* Hided all the foreign keys in the table to prevent invalid filter context
 
 #### 3. Create calculated columns and measures with DAX
 This include:
-* Adding price tiers for the products listed in **_Products_** table
-* Creating measures to calculate price, cost, profit, profit margin, number of transactions and return rates.
+* Added price tiers for the products listed in **_Products_** table
+* Created measures to calculate price, cost, profit, profit margin, number of transactions and return rates.
 
 #### 4. Design an interactive dashboard to visualize the data
 
